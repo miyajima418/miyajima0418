@@ -1,0 +1,1087 @@
+@charset "UTF-8";
+/* CSS Document */
+.section-first__image,.section-first__content,.section-second__image,.section-second__content,.section-third__image,.section-third__content,.section-menu h0,.section-menu__picture,.section-menu__picture-pc,.section-menu__description,.section-menu__example,.section-fruits__picture,.section-fruits__description,.section-fruits__box,.section-fruits__example-picture,.section-fruits__example-box{
+  opacity: 0;
+  transform : translate(0, 50px);
+  transition : all 1500ms;
+}
+.section-first__image.scrollin,.section-first__content.scrollin,.section-second__image.scrollin,.section-second__content.scrollin,.section-third__image.scrollin,.section-third__content.scrollin,.section-menu h0.scrollin,.section-menu__picture.scrollin,.section-menu__picture-pc.scrollin,.section-menu__description.scrollin,.section-menu__example.scrollin,.section-fruits__picture.scrollin,.section-fruits__description.scrollin,.section-fruits__box.scrollin,.section-fruits__example-picture.scrollin,.section-fruits__example-box.scrollin{
+  opacity: 1;
+  transform: translate(0, 0);
+}
+.header{
+	height: 90vw;
+	width: 100%;
+	position: relative;
+}
+.header-img img{ 
+	height: 90vw;
+	width: 100%;
+	object-fit: cover;
+}
+.header-logo img{
+	width:250px;
+	position: absolute;
+	left: 50%;
+    top: 50%;
+    transform: translate(-50%,0);
+}
+.header__navigation {
+	display: none;
+}
+.header h1{
+	top:0%;
+	left: 50%;
+	transform: translate(-50%,0);
+	position: absolute;
+	font-size:11px;
+	font-weight: 300;
+	color:#FFFFFF;
+	display: block;
+	line-height: 1.5rem;
+	padding-top: 40px;
+}
+.header h2{
+	top:0%;
+	left: 50%;
+	padding-top: 70px;
+	transform: translate(-50%,0);
+	position: absolute;
+	display: block;
+        font-family:'Shippori Mincho  ExtraBold', 'Shippori Mincho Medium', 'Shippori Mincho SemiBold';
+        font-size: 16px;
+	    line-height: 10px;
+        font-weight: 300;
+        color: #FFFFFF;
+}
+/* ハンバーガーアイコン */
+  #nav-drawer {
+    top:0%;
+	right: 0%;
+	padding-top: 50px;
+	padding-right: 10px;
+	position: absolute;
+  }
+  #nav-open {
+    display: inline-block;
+    vertical-align: middle;
+    width: 25px;
+    height: 22px;
+  }
+  #nav-open span, #nav-open span:before, #nav-open span:after {
+    position: absolute;
+    height: 1px;
+    width: 25px;
+    background-color: #FFFFFF;
+    display: block;
+    content: "";
+	margin-top: -42px;
+  }
+  #nav-open span:before {
+    bottom: -8px;
+  }
+  #nav-open span:after {
+    bottom: -16px;
+  }
+  #nav-close {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #413c38;
+    opacity: 0.5;
+  }
+  #nav-content {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 70%;
+    height: 100%;
+    background-image: url("../卒業制作写真/footer-background.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+    text-align: center;
+    padding: 15px 0 0 0px;
+    transform: translateX(-105%);
+    transition: 0.3s ease-in-out;
+    box-shadow: 5px 0 25px rgba(0, 0, 0, 0.25);
+  }
+@media(min-width:1080px){
+	#nav-content{
+		width:30%;
+	}
+}
+  .nav-drawer__title img{
+    max-width: 445px;
+	width: 70%;
+	margin-top: 50px;
+	margin-bottom: 34px;
+  }
+  .nav-drawer__link-top {
+    display: block;
+  }
+  #nav-content ul li {
+    margin-bottom: 36px;
+  }
+  #nav-content ul li a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #FFFFFF;
+  }
+  #nav-input:checked ~ #nav-close {
+    display: block;
+  }
+  #nav-input:checked ~ #nav-content {
+    transform: translateX(0%);
+  }
+@media(min-width:800px){
+    .header{
+		height: 55vw;
+	}
+	.header-img img{
+		height: 55vw;
+	}
+	.header-img1 img{
+		 width: 100%;
+         height: 55vw;
+         object-fit: cover;
+         object-position: 50% 80%;
+	}
+	.header h1{
+		font-size: 16px;
+		line-height: 2.4rem;
+	}
+	.header h2{
+		font-size:24px;
+		padding-top: 80px;
+ }
+	#nav-drawer {
+	padding-top: 80px;
+	padding-right: 50px;
+	position: absolute;
+  }
+}
+.covid-button{
+	background-image:url("../卒業制作写真/button-image.png");
+	margin:50px auto;
+	width: 300px;
+	padding: 20px 0;
+	color: #FFFFFF;
+}
+.section-first{
+	margin-bottom: 100px;
+}
+.section-first__image{
+	height: 80vw;
+	width: 100%;
+	background-image: url("../卒業制作写真/カウンター超画質.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: relative;
+	
+}
+.section-first__image h1{
+	font-size: 5vw;
+	-ms-writing-mode: tb-rl;
+	writing-mode: vertical-rl;
+	color: #FFFFFF;
+	line-height: 8vw;
+	letter-spacing: 0.72vw;
+	text-align: left;
+	position: absolute;
+	margin-left: 5vw;
+	margin-top: 15vw;
+}
+.section-first__box{
+    display: inline-block;
+	margin: 20px 10px 0 10px;
+	border: solid #413c38 2px;
+	padding:5%;
+	max-width: 637px;
+}
+.section-first__description{
+	display: inline-block;
+	text-align: left;
+}
+.section-first__bartender{
+	display: flex;
+	justify-content: center;
+	margin: 20px 20px 0 20px;
+	align-items: flex-end;
+}
+.section-first__bartender a{
+	width:40%;
+}
+.section-first__bartender img{
+	text-align: left;
+	max-width: 300px;
+	width: 100%;
+	transition-duration: .4s;
+}
+.section-first__bartender img:hover{
+	transform: scale(1.1);
+}
+.section-first__bartender-txt{
+	font-size: 14px;
+	line-height: 2.1rem;
+	text-align: left;
+	margin-left: 15px;
+	max-width: 250px;
+	width: 50%;
+}
+@media(min-width:1080px){
+	.section-first{
+		margin-bottom: 300px;
+	}
+  .section-first__image{
+		height: 500px;
+	    background-position: 50%;
+	}
+	.section-first__image h1{
+		font-size: 40px;
+		margin-top: 50px;
+		margin-left: 12vw;
+		line-height: 60px;
+	}
+	.section-first__content{
+		display:flex;
+		justify-content: center; 
+	}
+	.section-first__box{
+		max-width: 50%;
+		margin-top: 50px;
+		padding: 50px 100px;
+	}
+	.section-first__description span{
+	    display: block;
+    }
+	.section-first__description p::first-letter{
+        font-size: 36px;
+}
+    .section-first__bartender {
+	    margin: 0;
+  }
+	.section-first__bartender img{
+		width: 110%;
+	}
+	.section-first__bartender-txt{
+    margin-left:0px;
+    padding-left: 60px;
+ }
+}
+.section-second{
+	margin-bottom: 100px;
+}
+.section-second__image{
+	height: 80vw;
+	background-image: url("../卒業制作写真/バーテンダー写真.png");
+	background-repeat: no-repeat;
+	background-size: 270%;
+	background-position: top 5% right 51%; 
+	color: #FFFFFF;
+	line-height: 10vw;
+	letter-spacing: 0.8vw;
+	position: relative;
+}
+.section-second__image h1{
+	font-size: 5vw;
+	-ms-writing-mode: tb-rl;
+	writing-mode: vertical-rl;
+	position: absolute;
+	margin-left: 70vw;
+	margin-top: 12vw;
+	line-height: 10vw;
+	letter-spacing: 0.72vw;
+	text-align: left;
+	color: #FFF;
+}
+.section-second__box{
+	display: inline-block;
+	margin: 20px 10px 0 10px;
+	border: solid #413c38 2px;
+	padding:5%;
+	max-width: 637px;
+}
+.section-second__description{
+	display: inline-block;
+	text-align: left;
+}
+.section-second__bartender{
+	display: flex;
+	justify-content: center;
+	margin: 20px 20px 0 20px;
+	align-items: flex-end;
+}
+.section-second__bartender a{
+	width:50%;
+}
+.section-second__bartender img{
+	text-align: left;
+	max-width: 300px;
+	width: 100%;
+	transition-duration: .4s;
+}
+.section-second__bartender img:hover{
+	transform: scale(1.1);
+}
+.section-second__bartender-txt{
+	font-size: 14px;
+	line-height: 2.1rem;
+	text-align: left;
+	margin-left: 15px;
+	max-width: 250px;
+	width: 50%;
+}
+@media(min-width:1080px){
+	.section-second{
+		margin-bottom: 300px;
+	}
+  .section-second__image{
+		max-height:500px;
+	    margin: 0 auto;
+	    background-position:top 10% right 25%;
+	    background-size: 130%;
+	}
+	.section-second__image h1{
+	   font-size: 40px;
+	   margin-top: 20px;
+	   line-height: 60px;
+	   margin-left:70vw;
+	   letter-spacing:10px;
+	}
+	.section-second__content{
+		display:flex;
+		justify-content: center; 
+	}
+	.section-second__box{
+		max-width: 50%;
+		margin-top: 50px;
+		padding: 50px 100px;
+	}
+	.section-second__description p::first-letter{
+        font-size: 36px;
+		margin-left: -15px;
+}
+	.section-second__description span{
+	    display: block;
+    }
+    .section-second__bartender {
+	    margin: 0;
+  }
+	.section-second__bartender img{
+		width: 110%;
+	}
+	.section-second__bartender-txt{
+    margin-left:0px;
+    padding-left: 40px;
+ }
+}
+.section-third__image1{
+	position: relative;
+}
+.section-third__image1 img{
+	width: 100%;
+	height: 60vw;
+	object-fit: cover;
+}
+.section-third__image1 p {
+  position: absolute;
+  top: 0;
+  height: 60vw;
+  width: 100%;
+  color: #fff;
+  font-size: 5vw;
+  font-family:'ヒラギノ明朝 ProN W3', 'ヒラギノ明朝 ProN W6';
+  background: rgba(0,0,0,0.5);
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+　-webkit-transition:	all 0.2s ease;
+　transition:		all 0.2s ease;
+}
+.section-third__image1:hover p{
+	 opacity: 1;
+}
+.section-third__image2{
+	position: relative;
+}
+.section-third__image2 img{
+	width: 70%;
+	height: 40vw;
+	object-fit: cover;
+	display: block;
+}
+.section-third__image2 p{
+  position: absolute;
+  top: 0;
+  width: 70%;
+  height: 40vw;
+  color: #fff;
+  font-size: 5vw;
+  font-family:'Shippori Mincho  ExtraBold', 'Shippori Mincho Medium', 'Shippori Mincho SemiBold';
+  background: rgba(0,0,0,0.5);
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+　-webkit-transition:	all 0.2s ease;
+　transition:		all 0.2s ease;
+}
+.section-third__image2:hover p{
+	 opacity: 1;
+}
+.section-third__box{
+	display: inline-block;
+	margin: -40px 10px 0 10px;
+	border: solid #413c38 2px;
+	padding:5%;
+	max-width: 637px;
+}
+.section-third__description{
+	margin-top: 30px;
+	display: inline-block;
+	text-align: left;
+}
+.section-third__description h1{
+	text-align: center;
+}
+.section-third__description b{
+	color: #D07A36;
+}
+.section-third__bartender{
+	display: flex;
+	justify-content: center;
+	margin: 20px 20px 0 20px;
+	align-items: flex-end;
+}
+.section-third__bartender a{
+	width:50%;
+}
+.section-third__bartender img{
+	text-align: left;
+	max-width: 300px;
+	width: 100%;
+	transition-duration: .4s;
+}
+.section-third__bartender img:hover{
+	transform: scale(1.1);
+}
+.section-third__bartender-txt{
+	font-size: 14px;
+	line-height: 2.1rem;
+	text-align: left;
+	margin-left: 15px;
+	max-width: 250px;
+	width: 50%;
+}
+.room-button{
+	background-image:url("../卒業制作写真/button-image.png");
+	margin:50px auto;
+	width: 300px;
+	padding: 20px 0;
+	color: #FFFFFF;
+}
+.section-third__description{
+	margin-top: 30px;
+	display: inline-block;
+	text-align: left;
+}
+.section-third__description h1{
+	text-align: center;
+}
+@media(min-width:1080px){
+		.section-third{
+		margin-bottom: 300px;
+	}
+	.section-third__image{
+		display: flex;
+		justify-content: center; 
+	}
+	.section-third__image1 img{
+		width:48vw;
+		height: 26vw;
+	}
+	.section-third__image1 p{
+		font-size:36px;
+		line-height: 5.4rem;
+		width:48vw;
+		height: 26vw;
+	}
+	.section-third__image2 img{
+		width:48vw;
+		height: 26vw;
+		margin-top: 50px;
+		margin-left: 50px;
+	}
+	.section-third__image2 p{
+		font-size:36px;
+		line-height: 5.4rem;
+		width:48vw;
+		height: 26vw;
+		margin-top: 50px;
+		margin-left: 50px;
+	}
+	.section-third__content{
+		display:flex;
+		justify-content: center; 
+	}
+	.section-third__box{
+		max-width: 50%;
+		max-height: 350px;
+		margin-top: 50px;
+		padding: 50px 100px;
+	}
+	.section-third__description {
+		margin: 0px;
+	}
+	.section-third__description h1{
+		font-size: 40px;
+		margin-bottom: 20px;
+	}
+	.section-third__description span{
+		display: block;
+   }
+    .section-third__bartender {
+	    margin: 0;
+		margin-top: 50px;
+  }
+	.section-third__bartender img{
+		width: 110%;
+	}
+	.section-third__bartender-txt{
+    margin-left:0px;
+    padding-left: 40px;
+ }
+
+}
+@media(min-width:550px){
+	.section-third__description h1 {
+    font-size:36px;
+	margin-bottom: 10px;
+	}
+}
+.section-menu{
+	margin-bottom: 50px;
+}
+.section-menu h0{
+  font-family:'Shippori Mincho  ExtraBold', 'Shippori Mincho Medium', 'Shippori Mincho SemiBold';
+  font-size:24px;
+  font-weight: 500;
+}
+.section-menu__picture{
+	display: flex;
+}
+.section-menu__picture1{
+	background-image:url("../卒業制作写真/ウイスキーボトル.png");
+	height: 60vw;
+	width:35vw;
+	background-size:150%;
+	background-repeat: no-repeat;
+}
+.section-menu__picture2{
+	background-image:url("../卒業制作写真/カクテル4種_縦.png");
+	height: 60vw;
+	width:35vw;
+	background-size:150%;
+	background-position:30% 50%;
+	background-repeat: no-repeat;
+	margin:0 5px;
+}
+.section-menu__picture3{
+	background-image:url("../卒業制作写真/バーテンダー作業.png");
+	height: 60vw;
+	width:35vw;
+	background-size:160%;
+	background-position:30% 30%;
+	background-repeat: no-repeat;
+}
+.section-menu__picture-pc{
+	display: none;
+}
+.section-menu__box{
+	display: inline-block;
+	margin: 20px 10px 0 10px;
+	border: solid #413c38 2px;
+	padding:5%;
+}
+.section-menu__description{
+	display: inline-block;
+	text-align: left;
+}
+.section-menu__description b{
+	color: #D07A36;
+}
+.section-menu__description h1{
+	text-align: center;
+	margin-bottom: 10px;
+	margin-top: 5px;
+}
+.section-menu__example b{
+	color: #D07A36;
+}
+.section-menu__example h1{
+  font-family:'Shippori Mincho  ExtraBold', 'Shippori Mincho Medium', 'Shippori Mincho SemiBold';
+  font-size: 24px;
+  line-height: 3.6rem;
+}
+.section-menu__bartender a{
+	width:50%;
+}
+.section-menu__bartender{
+	display: flex;
+	justify-content: center;
+	margin: 20px 20px 0 20px;
+	align-items: flex-end;
+}
+.section-menu__bartender img{
+	text-align: left;
+	max-width: 300px;
+	width: 100%;
+	transition-duration: .4s;
+}
+.section-menu__bartender img:hover{
+	transform: scale(1.1);
+}
+.section-menu__bartender-txt{
+	font-size: 14px;
+	line-height: 2.1rem;
+	text-align: left;
+	margin-left: 15px;
+	max-width: 250px;
+	width: 50%;
+}
+.section-menu__example-picture1{
+	position: relative;
+	width: 70vw;
+	margin-left: 50px;
+	margin-top: 50px;
+}
+.section-menu__example-picture1 p{
+	 position:absolute;
+	 font-family:'Shippori Mincho  ExtraBold', 'Shippori Mincho Medium', 'Shippori Mincho SemiBold';
+     font-size: 5vw;
+     font-weight: 500;
+     color: #FFFFFF;
+	 top: 20%;
+	 right: 8%;
+	 text-shadow: 1px 2px 3px #000000;
+}
+.section-menu__example-picture1 img{
+	  width: 100%;
+　　　　height: auto;
+　　　　object-fit: cover;
+	  margin: auto;
+	  display: block;
+}
+.section-menu__example-picture2{
+	position: relative;
+	width: 60vw;
+	margin-left: auto;
+	margin-right: 50px;
+	margin-top: 5%;
+}
+.pic2-anime{
+	position: absolute;
+}
+.section-menu__example-picture2 p {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-size: 5vw;
+  font-family:'Shippori Mincho  ExtraBold', 'Shippori Mincho Medium', 'Shippori Mincho SemiBold';
+  background: rgba(0,0,0,0.5);
+  opacity: 0;
+  padding-top:10vw;
+}
+.section-menu__example-picture2:hover p{
+	 opacity: 1;
+}
+.section-menu__example-picture2 img{
+      width: 100%; 
+　　　　height: auto; 
+　　　　object-fit: cover;
+	  margin: auto;
+	  display: block;
+}
+@media(max-width:1080px){
+	.section-menu h0 span{
+		display: block;
+	}
+}
+@media(min-width:1080px){
+	.section-menu{
+		margin-bottom: 200px;
+	}
+	.section-menu{
+		position: relative;
+	}
+	.section-menu h0{
+		font-size: 36px;
+	}
+	.section-menu__picture1,.section-menu__picture2,.section-menu__picture3{
+		display: none;
+	}
+	.section-menu__picture-pc{
+		display: flex;
+		width:100%;
+		margin-top: 50px;
+	}
+	.section-menu__picture1-pc img{
+		width: auto;
+		height: 42vw;
+	}
+	.section-menu__picture2-pc img{
+		margin-left: -6vw;
+		width: auto;
+		height: 42vw;
+	}
+	.section-menu__picture3-pc img{
+		margin-left: -6vw;
+		width: auto;
+		height: 42vw;
+	}
+	.section-menu__box{
+		border: none;
+		margin:0;
+		top:50px;
+		right: 0;
+		padding: 20px 0 0 20px;
+	}
+	.section-menu__description {
+	  -ms-writing-mode: tb-rl;
+	  writing-mode: vertical-rl;
+	}
+	.section-menu__description h1{
+		font-size:40px;
+	}
+	.section-menu__description p{
+		margin-right: 40px;
+	}
+	.section-menu__description span{
+ 	  display: block;
+    }
+	.section-menu__example{
+		margin-bottom: 0px;
+	}
+	.section-menu__example span{ 
+		display: flex;
+		justify-content: center;
+	}
+	.section-menu__example h1{
+		text-align: left;
+		font-size: 40px;
+		line-height: 60px;
+	}
+	.section-menu__example h1 span{
+		display: block;
+	}
+	.section-menu__example i{
+		font-size:24px;
+	}
+	.section-menu__bartender {
+		margin: 0;
+		justify-content: end;
+		padding-left: 150px;
+	}
+	.section-menu__bartender-txt{
+		max-width: 250px;
+		min-width: 100px;
+ }
+	.section-menu__example-picture{
+		display: flex;
+		justify-content: center;
+		gap:60px;
+		flex-direction:row-reverse;
+	}
+	.section-menu__example-picture2  {
+		margin: 0;
+		width: 500px;
+		bottom:100px;
+	}
+	.jap{
+　position: absolute;
+  top: 0;
+  width: 70%;
+  height: 40vw;
+  color: #fff;
+  font-size: 5vw;
+  font-family:'Shippori Mincho  ExtraBold', 'Shippori Mincho Medium', 'Shippori Mincho SemiBold';
+  background: rgba(0,0,0,0.5);
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+　　　.ja:hover p{
+	 opacity: 1;
+}
+	.section-menu__example-picture1 {
+        margin: 0;
+		width: 625px;
+		height: 400px;
+		margin-top: 50px;
+	}
+	.section-menu__example-picture1 p{
+		font-size: 40px;
+		top: 100px;
+	    right: 50px;
+	}
+}
+@media(min-width:550px){
+	.section-menu h0{
+    font-size:36px;
+	}
+	.section-menu h0 span{
+     display: inline-block;
+	 margin-bottom: 40px;
+	}
+	.section-menu__example i{
+		font-size:24px;
+	}
+}
+.section-fruits__picture img{
+	height: 60vw;
+	width: 100%;
+	object-fit: cover;
+	object-position: 50% 80%;
+	margin-bottom: 10px;
+	margin-top: 100px;
+}
+.section-fruits__description h2{
+  font-family:'Shippori Mincho  ExtraBold', 'Shippori Mincho Medium', 'Shippori Mincho SemiBold';
+  line-height: 2.5rem;
+  font-weight: 300;
+}
+.section-fruits__description span{
+	font-style: italic;
+	font-size:20px;
+}
+.section-fruits__box{
+	display: inline-block;
+	margin: 20px 10px 50px 10px;
+	border: solid #413c38 2px;
+	padding:5%;
+	max-width: 500px;
+}
+.section-fruits__box b{
+	color: #D07A36;
+}
+.section-fruits__box p{
+	margin-top: 5px;
+	display: inline-block;
+	text-align: left;
+}
+.section-fruits__description h1{
+	text-align: center;
+	margin-bottom: 10px;
+}
+.section-fruits__example-picture1 img{
+	width:100%;
+	max-width: 500px;
+	object-fit: cover;
+	object-position: 50% 80%;
+	margin: 50px 0 10px 0;
+}
+.section-fruits__example-bartender img{
+	display: none;
+}
+.section-fruits__example-box{
+	display: inline-block;
+	margin: 0 10px 0 10px;
+	border: solid #413c38 2px;
+	padding:5%;
+	max-width: 500px;
+}
+.section-fruits__example-description{
+	display: inline-block;
+	text-align: left;
+}
+@media(min-width:1080px){
+	.section-fruits__flex{
+		display: flex;
+	}
+	.section-fruits__picture{
+		text-align: left;
+	}
+	.section-fruits__picture img{
+		width: 52vw;
+		height: 34vw;
+		object-fit: cover;
+		margin-top: 130px;
+	}
+	.section-fruits__description{
+		margin-top: 18vw;
+		margin-left: 30px;
+	}
+	.section-fruits__description h1{
+		font-size: 40px;
+	}
+	.section-fruits__box{
+	    margin-left: auto;
+	    margin-right: -500px;
+	    margin-top: -200px;
+	}
+	.section-fruits__box h1{
+		font-size: 40px;
+		margin-bottom: 20px;
+	}
+	.section-fruits__example-picture{
+		display: flex;
+		justify-content: center;
+	}
+	.section-fruits__example-picture1 img{
+		object-fit: cover;
+		width: 30vw;
+		height: 30vw;
+		margin-right: 70px;
+	}
+	.section-fruits__example-bartender img{
+		display: block;
+		max-width: 300px;
+		margin-top:11.5vw;
+	}
+	.section-fruits__example-box{
+	    margin-left: auto;
+	    margin-top: -100px;
+		margin-right: -500px;
+	}
+	.section-fruits__example-box h1{
+		font-size: 40px;
+		margin-bottom: 20px;
+	}
+}
+@media(min-width:550px){
+	.section-menu__example h1{
+    font-size:36px;
+	line-height: 5.4rem;
+	}
+	.section-fruits__description h1,.section-fruits__box h1,.section-fruits__example-box h1{
+		font-size: 36px;
+	}
+	.section-fruits__box h1,.section-fruits__example-box h1{
+		margin-bottom: 10px;
+	}
+}
+.menu-button{
+	background-image:url("../卒業制作写真/button-image.png");
+	margin:50px auto;
+	width: 300px;
+	padding: 20px 0;
+	color: #FFFFFF;
+}
+.section-information{
+	background-image:url("../卒業制作写真/information-background.png");
+	padding-bottom: 50px;
+}
+.section-information__logo img{
+	max-width: 445px;
+	width: 70%;
+	margin-top: 50px;
+	margin-bottom: 34px;
+}
+.section-information__description{
+	text-align: center;
+	display: block;
+}
+.section-information__description p{
+	font-size: 14px;
+	text-align: left;
+	line-height: 2.8rem;
+	margin-bottom: 20px;
+	display: inline-block;
+}
+.section-information__signboard img {
+	margin: -15px auto;
+	width: 80%;
+}
+.section-information__signboard p{
+	background-image: url("../卒業制作写真/footer-background.png");
+	bottom: 0;
+	width: 80%;
+	font-size: 1.4rem;
+	margin: 0 auto;
+	color: #FFF;
+	line-height: 2rem;
+}
+.section-information__signboard h2{
+  font-family:'Shippori Mincho  ExtraBold', 'Shippori Mincho Medium', 'Shippori Mincho SemiBold';
+  font-size: 2.4rem;
+  font-weight: 300;
+  margin-top: 5px;
+}
+.section-information__signboard h3{
+  font-family:'ヒラギノ角ゴシック W0', 'ヒラギノ角ゴシック W1', 'ヒラギノ角ゴシック W2', 'ヒラギノ角ゴシック W3', 'ヒラギノ角ゴシック W4', 'ヒラギノ角ゴシック W6', 'ヒラギノ角ゴシック W7', 'ヒラギノ角ゴシック W9';
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding-bottom: 50px;
+  margin-top: -30px;
+}
+.section-access__map {
+  height: 330px;
+}
+.section-access__map iframe {
+  width: 100%;
+  height: 100%;
+  border: solid 1px #333;
+}
+@media(min-width:1080px){
+	.section-information{
+		margin-top: 300px;
+	}
+	.section-information__flex{
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: center
+	}
+}
+.url-button{
+	background-image:url("../卒業制作写真/button-image.png");
+	margin:50px auto 0 auto;
+	width: 300px;
+	padding: 20px 0;
+	color: #FFFFFF;
+}
+.footer {
+  min-height: 130px;
+  background-image:url("../卒業制作写真/footer-background.png");
+  background-repeat: repeat;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-weight: 600;
+  position: relative;
+}
+.footer__site-map {
+  margin-bottom: 30px;
+}
+.footer__site-map h2 {
+  display: none;
+}
+.footer__site-map li {
+  margin: 0 10px;
+  display: inline-block;
+}
+.footer__site-map li a {
+  text-decoration: none;
+}
+.footer__site-map li a:visited {
+  color: #CAD0D2;
+}
+.footer small {
+  color: #FFF;
+  font-family:'Shippori Mincho  ExtraBold', 'Shippori Mincho Medium', 'Shippori Mincho SemiBold';
+  font-size: 11px;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+}

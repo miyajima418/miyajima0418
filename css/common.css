@@ -1,0 +1,64 @@
+@charset "UTF-8";
+/* CSS Document */
+html {
+  font-size: 62.5%; /* 16px * 62.5% = 10px */
+  width: 100%;
+  box-sizing: border-box;
+}
+body {
+  background-image:url("../卒業制作写真/background.png");
+  font-family:'ヒラギノ角ゴシック W0', 'ヒラギノ角ゴシック W1', 'ヒラギノ角ゴシック W2', 'ヒラギノ角ゴシック W3', 'ヒラギノ角ゴシック W4', 'ヒラギノ角ゴシック W6', 'ヒラギノ角ゴシック W7', 'ヒラギノ角ゴシック W9';
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 3.6rem;
+  text-align: center;
+  color: #413c38;
+}
+.under_line{ 
+	background: linear-gradient(transparent 60%, #ffff6e 60%); 
+	font-weight: 600;
+}
+section h1 {
+  font-family:'Shippori Mincho  ExtraBold', 'Shippori Mincho Medium', 'Shippori Mincho SemiBold';
+  font-size: 24px;
+  font-weight: 300;
+  color: #413c38;
+}
+
+a{
+	text-decoration: none;
+	font-family: 'Shippori Mincho  ExtraBold', 'Shippori Mincho Medium', 'Shippori Mincho SemiBold';
+}
+a:hover {
+  opacity: 0.5;
+}
+a,a:hover,a:visited{
+    color: #FFFFFF;
+}
+.txt-vertical {
+	cursor: vertical-text;
+	writing-mode: vertical-rl;
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+.none{
+	display: none;
+}
+
+/* return to top */
+#scroll-top {
+  background-image: url("../卒業制作写真/button-image.png");
+  bottom: 20px;
+  height: 60px;
+  width: 60px;
+  padding-top: 10px;
+  border-radius: 50%;
+  position: fixed;
+  right: 10px;
+}
+#scroll-top a {
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+}
